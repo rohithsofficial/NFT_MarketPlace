@@ -2,11 +2,11 @@ import nftMarketplace from "./NFTMarketplace.json";
 
 //NFT MARKETPLACE
 //--------POLYGON AMOY TESTNET
-export const NFTMarketplaceAddress =
-  "0x620C57A2C821b4680090393891cA49Bd715c4813";
-//--------LOCALHOST
 // export const NFTMarketplaceAddress =
-//   "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+//   "0x620C57A2C821b4680090393891cA49Bd715c4813";
+// --------LOCALHOST 
+export const NFTMarketplaceAddress =  
+      "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 export const NFTMarketplaceABI = nftMarketplace.abi;
 
 //NETWORK
@@ -107,6 +107,6 @@ const changeNetwork = async ({ networkName }) => {
 };
 
 export const handleNetworkSwitch = async () => {
-  const networkName = "polygon_amoy";
+  const networkName = "localhost";
   await changeNetwork({ networkName });
 };

@@ -49,7 +49,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
   const [accountBalance, setAccountBalance] = useState("");
   const router = useRouter();
 
-  //---CHECK IF WALLET IS CONNECTD
+  //---CHECK IF WALLET IS CONNECTED
 
   const checkIfWalletConnected = async () => {
     try {
@@ -80,7 +80,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
     }
   };
 
-  //---CONNET WALLET FUNCTION
+  //--- CONNECT WALLET FUNCTION
   const connectWallet = async () => {
     try {
       if (!window.ethereum)
@@ -112,8 +112,8 @@ export const NFTMarketplaceProvider = ({ children }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: `45e532f7e3af48d50498`,
-            pinata_secret_api_key: `8215ec1869eac0a7b56c594289fff2070bac81176cc6c0f53719d3bc58e11bd1`,
+            pinata_api_key: `04cf6ba79fae59d147b5`,
+            pinata_secret_api_key: `c8b0b87694330837afbf6f2af651c13fd5bceba2b737022f2f527588e597a591`,
             "Content-Type": "multipart/form-data",
           },
         });
@@ -130,7 +130,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
     setOpenError(true);
   };
 
-  //---CREATENFT FUNCTION
+  //---CREATE NFT FUNCTION
   const createNFT = async (name, price, image, description, router) => {
     if (!name || !description || !price || !image)
       return setError("Data Is Missing"), setOpenError(true);
@@ -143,8 +143,8 @@ export const NFTMarketplaceProvider = ({ children }) => {
         url: "https://api.pinata.cloud/pinning/pinJSONToIPFS",
         data: data,
         headers: {
-          pinata_api_key: `c6586eea4629690d986e`,
-          pinata_secret_api_key: `4260b35586d0745866b2a3fc706b2051e774872e6ae699582374822b0b90cfbc`,
+          pinata_api_key: `04cf6ba79fae59d147b5`,
+            pinata_secret_api_key: `c8b0b87694330837afbf6f2af651c13fd5bceba2b737022f2f527588e597a591`,
           "Content-Type": "application/json",
         },
       });
