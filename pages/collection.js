@@ -1,5 +1,5 @@
 import React from "react";
-
+import withAuthProtection from "../utils/withAuth";
 //INTERNAL IMPORT
 import Style from "../styles/collection.module.css";
 import images from "../img";
@@ -51,4 +51,4 @@ const collection = () => {
   );
 };
 
-export default collection;
+export default withAuthProtection(collection);

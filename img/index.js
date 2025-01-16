@@ -10,7 +10,7 @@ import creatorbackground8 from "./creatorbackground-8.jpg";
 import creatorbackground9 from "./creatorbackground-9.jpg";
 import creatorbackground10 from "./creatorbackground-10.jpg";
 import creatorbackground11 from "./creatorbackground-11.jpg";
-import user1 from "./user-1.png";
+import user1 from "./user-1.jpg";
 import user2 from "./user-2.png";
 import user3 from "./user-3.png";
 import user4 from "./user-4.png";
@@ -27,6 +27,7 @@ import service4 from "./service-4.png";
 import logoLight from "./logo-light.svg";
 import logo from "./logo.svg";
 import facebook from "./facebook.svg";
+import google from  "./google.svg";
 import twitter from "./twitter.svg";
 import telegram from "./telegram.svg";
 import youtube from "./youtube.svg";
@@ -109,6 +110,7 @@ export default {
   logoLight,
   facebook,
   telegram,
+  google,
   twitter,
   vector,
   vimeo,
