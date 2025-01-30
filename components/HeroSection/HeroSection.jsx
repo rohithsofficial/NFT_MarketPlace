@@ -23,7 +23,7 @@ const HeroSection = () => {
             your NTFs and sell them
           </p>
           <Button
-            btnName="Start your search"
+            btnName="🚀 Explore NFTs"
             handleClick={() => router.push("/searchPage")}
           />
         </div>

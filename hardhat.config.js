@@ -29,3 +29,12 @@ module.exports = {
   },
 };
 
+// module.exports = {
+//   networks: {
+//     localhost: {
+//       url: "http://127.0.0.1:7545", // Ganache default port
+//       chainId: 1337, // Ganache default chain ID
+//     },
+//   },
+//   solidity: "0.8.4",
+// };

@@ -144,7 +144,7 @@ const BigNFTSilder = () => {
               <MdTimer
                 className={Style.bigNFTSlider_box_left_bidding_box_icon}
               />
-              <span>Auction ending in</span>
+              {/* <span>Auction ending in</span> */}
             </p>
 
             <div className={Style.bigNFTSlider_box_left_bidding_box_timer}>

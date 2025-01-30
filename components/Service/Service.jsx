@@ -18,10 +18,9 @@ const Service = () => {
           <p className={Style.service_box_item_step}>
             <span>Step 1</span>
           </p>
-          <h3>Filter & Discover</h3>
+          <h3>Connect Your Wallet</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+          Securely connect your crypto wallet to start exploring the marketplace.
           </p>
         </div>
         <div className={Style.service_box_item}>
@@ -32,12 +31,11 @@ const Service = () => {
             height={100}
           />
           <p className={Style.service_box_item_step}>
-            <span>Step 1</span>
+            <span>Step 2</span>
           </p>
           <h3>Filter & Discover</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+          Browse through a variety of NFTs using filters to find the best fit for you.
           </p>
         </div>
         <div className={Style.service_box_item}>
@@ -48,12 +46,11 @@ const Service = () => {
             height={100}
           />
           <p className={Style.service_box_item_step}>
-            <span>Step 1</span>
+            <span>Step 3</span>
           </p>
-          <h3>Connect Wallet</h3>
+          <h3>Buy & Sell</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+          Purchase NFTs, list your own for sale, and earn through trading.
           </p>
         </div>
         <div className={Style.service_box_item}>
@@ -64,12 +61,11 @@ const Service = () => {
             height={100}
           />
           <p className={Style.service_box_item_step}>
-            <span>Step 1</span>
+            <span>Step 4</span>
           </p>
           <h3>Start trading</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+          Engage in auctions, bid on NFTs, and grow your digital assets.
           </p>
         </div>
       </div>
