@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { useRouter } from "next/router";
-import { AuthProvider } from "../context/AuthContext"; // Import AuthProvider
+import { AuthProvider } from "../Context/AuthContext"; // Import AuthProvider
 import { NavBar, Footer } from "../components/componentsindex";
 import { NFTMarketplaceProvider } from "../Context/NFTMarketplaceContext";
 
