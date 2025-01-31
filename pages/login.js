@@ -4,7 +4,7 @@ import Image from "next/image";
 // import images from "../img/index.js"; // Ensure the correct path to your images
 import Style from "../styles/login.module.css"; // Create a separate CSS module for styling
 import { Button } from "../components/componentsindex.js";
-import { useAuth } from "../context/AuthContext" ;
+import { useAuth } from "../Context/AuthContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../Context/AuthContext";
 import { useEffect } from "react";
 
 const withAuthProtection = (WrappedComponent) => {
