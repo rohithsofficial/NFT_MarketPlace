@@ -1,19 +1,18 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const connectDB = async () => {
+  if (mongoose.connection.readyState >= 1) {
+    console.log("✅ Already connected to MongoDB");
+    return;
+  }
+
   try {
-    const mongoURI = process.env.MONGO_URI;  // Getting URI from environment variable
-    if (!mongoURI) {
-      throw new Error("MongoDB URI is not defined in environment variables");
-    }
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("MongoDB connected successfully");
-  } catch (err) {
-    console.error("Error connecting to MongoDB:", err);
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("✅ MongoDB Connected Successfully");
+  } catch (error) {
+    console.error("❌ MongoDB Connection Error:", error);
+    throw new Error("Database connection failed");
   }
 };
 
-module.exports = connectDB;
+export default connectDB;
