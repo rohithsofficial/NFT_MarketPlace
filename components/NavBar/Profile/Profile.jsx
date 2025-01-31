@@ -10,7 +10,7 @@ import Style from "./Profile.module.css";
 import images from "../../../img";
 
 // Import the useAuth hook to get the authentication status
-import { useAuth } from "../../../context/AuthContext";
+import { useAuth } from '../../../context/AuthContext';
 
 const Profile = ({ currentAccount }) => {
   const { isAuthenticated, user, logout } = useAuth(); // Get authentication status

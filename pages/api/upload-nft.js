@@ -1,11 +1,11 @@
 // pages/api/upload-nft.js
 
-import dbConnect from "../../utils/dbConnect";  // Utility to connect to MongoDB
+import connectDB from "../../utils/db";  // Utility to connect to MongoDB
 import NFT from "../../models/NFT";  // The NFT model to store data
 
 export default async function handler(req, res) {
   // Connect to the database
-  await dbConnect();
+  await connectDB();
 
   // Handle POST request
   if (req.method === "POST") {
