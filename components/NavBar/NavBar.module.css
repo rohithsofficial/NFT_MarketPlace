@@ -129,6 +129,27 @@
     display: none;
 }
 
+/* Default nav item styling */
+.nav-item {
+    position: relative;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-item:hover {
+    color: var(--primary-color);
+}
+
+/* Active state effect */
+.nav-item.active {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
 @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .navbar_container{
         grid-template-columns: 1fr 1fr;

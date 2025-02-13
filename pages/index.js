@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import withAuthProtection from "../utils/withAuth";
 // INTERNAL IMPORT
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/index.module.css";
 import {
   HeroSection,
@@ -66,26 +66,27 @@ const Home = () => {
         heading="Featured NFTs"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
-      <Filter />
+      <br></br>
+      {/* <Filter /> */}
       {Array.isArray(nfts) && nfts.length === 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
       <BigNFTSilder />
-      <Title
+      {/* <Title
         heading="Audio Collection"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
-      <AudioLive />
+      <AudioLive /> */}
       {Array.isArray(creators) && creators.length === 0 ? (
         <Loader />
       ) : (
         <FollowerTab TopCreator={creators} />
       )}
-      <Slider />
-      <Collection />
-      <Title
+      {/* <Slider /> */}
+      {/* <Collection /> */}
+      {/* <Title
         heading="Browse by category"
         paragraph="Explore the NFTs in the most featured categories."
       />
-      <Category />
+      <Category /> */}
       <Subscribe />
       {/* <Brand /> */}
       {/* <Video /> */}

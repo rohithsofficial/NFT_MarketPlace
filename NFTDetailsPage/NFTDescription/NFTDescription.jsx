@@ -168,48 +168,48 @@ const NFTDescription = ({ nft }) => {
           </h1>
           <div className={Style.NFTDescription_box_profile_box}>
             <div className={Style.NFTDescription_box_profile_box_left}>
-              <Image
+              {/* <Image
                 src={images.user1}
                 alt="profile"
                 width={40}
                 height={40}
                 className={Style.NFTDescription_box_profile_box_left_img}
-              />
+              /> */}
               <div className={Style.NFTDescription_box_profile_box_left_info}>
-                <small>Creator</small> <br />
+                {/* <small>Creator</small> <br /> */}
                 {/* <Link href={{ pathname: "/author", query: `${nft.seller}` }}> */}
                 <Link href={{ pathname: "/author" }}>
                   <span>
-                    Rohith <MdVerified />
+                    {/* Rohith <MdVerified /> */}
                   </span>
                 </Link>
               </div>
             </div>
 
             <div className={Style.NFTDescription_box_profile_box_right}>
-              <Image
+              {/* <Image
                 src={images.creatorbackground1}
                 alt="profile"
                 width={40}
                 height={40}
                 className={Style.NFTDescription_box_profile_box_left_img}
-              />
+              /> */}
 
               <div className={Style.NFTDescription_box_profile_box_right_info}>
-                <small>Collection</small> <br />
+                {/* <small>Collection</small> <br /> */}
                 <span>
-                  Mokeny app <MdVerified />
+                  {/* Mokeny app <MdVerified /> */}
                 </span>
               </div>
             </div>
           </div>
 
           <div className={Style.NFTDescription_box_profile_biding}>
-            <p>
+            {/* <p>
               <MdTimer /> <span>Auction ending in:</span>
-            </p>
+            </p> */}
 
-            <div className={Style.NFTDescription_box_profile_biding_box_timer}>
+            {/* <div className={Style.NFTDescription_box_profile_biding_box_timer}>
               <div
                 className={
                   Style.NFTDescription_box_profile_biding_box_timer_item
@@ -242,7 +242,7 @@ const NFTDescription = ({ nft }) => {
                 <p>12</p>
                 <span>secs</span>
               </div>
-            </div>
+            </div> */}
 
             <div className={Style.NFTDescription_box_profile_biding_box_price}>
               <div

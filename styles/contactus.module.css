@@ -40,6 +40,19 @@
     margin-top: 2rem;
 }
 
+.successMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+
 
 @media screen and (max-width:35em) {
     .contactus_box{

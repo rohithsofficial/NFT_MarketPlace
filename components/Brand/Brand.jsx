@@ -16,10 +16,10 @@ const Brand = () => {
         <div className={Style.Brand_box_left}>
           {/* <Image src={images.logo} alt="brand logo" width={100} height={100} /> */}
           <a href="/">
-            <DiJqueryLogo className={Style.Brand_box_left_logo} />
+          <Image src={images.logo} alt="brand logo" width={100} height={100}  className={Style.Brand_box_left_logo}/> 
           </a>
-          <h1>Earn free crypto with Ciscrypt</h1>
-          <p>A creative agency that lead and inspire.</p>
+          <h1>Earn free crypto with  NFTVerse</h1>
+          {/* <p>A creative agency that lead and inspire.</p> */}
 
           <div className={Style.Brand_box_left_btn}>
             <Button

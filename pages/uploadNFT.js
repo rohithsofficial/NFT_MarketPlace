@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
 
 //INTERNAL IMPORT
+
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/upload-nft.module.css";
 import { UploadNFT } from "../UploadNFT/uploadNFTIndex";
 
@@ -42,4 +44,4 @@ const uploadNFT = () => {
   );
 };
 
-export default uploadNFT;
+export default withAuthProtection(uploadNFT);

@@ -31,7 +31,7 @@ const Profile = ({ currentAccount }) => {
           className={Style.profile_account_img}
         />
         <div className={Style.profile_account_info}>
-          <p>{user ? user.name : "Guest"}</p>
+          <p>{user ? user.name : "Rohith"}</p>
           <small>{currentAccount ? `${currentAccount.slice(0, 18)}..` : "Not Connected"}</small>
         </div>
       </div>

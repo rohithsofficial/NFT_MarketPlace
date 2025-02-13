@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useContext } from "react";
 
 //INTRNAL IMPORT
+
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/searchPage.module.css";
 import { Slider, Brand, Loader } from "../components/componentsindex";
 import { SearchBar } from "../SearchPage/searchBarIndex";
 import { Filter } from "../components/componentsindex";
 
-import { NFTCardTwo, Banner } from "../collectionPage/collectionIndex";
+import { CollectionProfile, NFTCardTwo, Banner } from "../collectionPage/collectionIndex";
 import images from "../img";
 
 //SMART CONTRACT IMPORT
@@ -64,6 +66,7 @@ const searchPage = () => {
   return (
     <div className={Style.searchPage}>
       <Banner bannerImage={images.creatorbackground2} />
+      <CollectionProfile />
       {/* <SearchBar
         onHandleSearch={onHandleSearch}
         onClearSearch={onClearSearch}
@@ -75,4 +78,4 @@ const searchPage = () => {
   );
 };
 
-export default searchPage;
+export default withAuthProtection(searchPage);

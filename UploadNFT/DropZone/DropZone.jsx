@@ -69,34 +69,34 @@ const DropZone = ({
                   {name || ""}
                 </p>
                 <p>
-                  <samp>Website:</samp>
-                  {website || ""}
+                  {/* <samp>Website:</samp> */}
+                  {/* {website || ""} */}
                 </p>
               </div>
 
               <div className={Style.DropZone_box_aside_box_preview_two}>
                 <p>
-                  <span>Description</span>
+                <span>Description:</span>
                   {description || ""}
                 </p>
               </div>
 
               <div className={Style.DropZone_box_aside_box_preview_three}>
                 <p>
-                  <span>Royalties</span>
+                  <span>Royalties:</span>
                   {royalties || ""}
                 </p>
                 <p>
-                  <span>FileSize</span>
-                  {fileSize || ""}
+                  {/* <span>FileSize</span>
+                  {fileSize || ""} */}
                 </p>
                 <p>
-                  <span>Properties</span>
-                  {properties || ""}
+                  {/* <span>Properties</span>
+                  {properties || ""} */}
                 </p>
                 <p>
-                  <span>Category</span>
-                  {category || ""}
+                  {/* <span>Category</span>
+                  {category || ""} */}
                 </p>
               </div>
             </div>

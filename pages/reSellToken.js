@@ -4,6 +4,8 @@ import axios from "axios";
 import Image from "next/image";
 
 //INTERNAL IMPORT
+
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/reSellToken.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
 import { Button } from "../components/componentsindex";
@@ -67,4 +69,5 @@ const reSellToken = () => {
   );
 };
 
-export default reSellToken;
+
+export default withAuthProtection(reSellToken);

@@ -32,7 +32,7 @@ const BigNFTSilder = () => {
     {
       title: "Buddy NFT",
       id: 2,
-      name: "Shoaib Hussain",
+      name: "Safaf",
       collection: "Home",
       price: "0000004 ETH",
       like: 243,
@@ -48,7 +48,7 @@ const BigNFTSilder = () => {
     {
       title: "Gym NFT",
       id: 3,
-      name: "Raayan Hussain",
+      name: "Vilas",
       collection: "GYm",
       price: "0000064 ETH",
       like: 243,
@@ -64,7 +64,7 @@ const BigNFTSilder = () => {
     {
       title: "Home NFT",
       id: 4,
-      name: "Raayan Hussain",
+      name: "Amith",
       collection: "GYm",
       price: "4664 ETH",
       like: 243,
@@ -178,8 +178,8 @@ const BigNFTSilder = () => {
             </div>
 
             <div className={Style.bigNFTSlider_box_left_button}>
-              <Button btnName="Place" handleClick={() => {}} />
-              <Button btnName="View" handleClick={() => {}} />
+              {/* <Button btnName="Place" handleClick={() => {}} />
+              <Button btnName="View" handleClick={() => {}} /> */}
             </div>
           </div>
 
