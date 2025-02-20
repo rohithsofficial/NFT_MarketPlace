@@ -22,10 +22,10 @@ const HelpCenter = () => {
       name: "LogIn",
       link: "login",
     },
-    {
-      name: "Subscription",
-      link: "subscription",
-    },
+    // {
+    //   name: "Subscription",
+    //   link: "subscription",
+    // },
   ];
   return (
     <div className={Style.box}>

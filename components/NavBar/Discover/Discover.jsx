@@ -7,10 +7,10 @@ import Style from "./Discover.module.css";
 const Discover = () => {
   //--------DISCOVER NAVIGATION MENU
   const discover = [
-    {
-      name: "Collection",
-      link: "collection",
-    },
+    // {
+    //   name: "Collection",
+    //   link: "collection",
+    // },
     {
       name: "Search",
       link: "searchPage",

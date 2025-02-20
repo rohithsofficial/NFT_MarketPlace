@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import Image from "next/image";
 
 //INTERNAL IMPORT
+
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/connectWallet.module.css";
 import images from "../img";
 
@@ -61,4 +63,4 @@ const connectWallet = () => {
   );
 };
 
-export default connectWallet;
+export default withAuthProtection(connectWallet);

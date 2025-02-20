@@ -1,6 +1,8 @@
 import React from "react";
 
 //INTERNAL IMPORT
+
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/subscription.module.css";
 import Subscription from "../Subscription/Subscription";
 const subscription = () => {
@@ -57,4 +59,4 @@ const subscription = () => {
   );
 };
 
-export default subscription;
+export default withAuthProtection(subscription);

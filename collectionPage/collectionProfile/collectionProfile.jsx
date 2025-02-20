@@ -18,7 +18,7 @@ const collectionProfile = () => {
       <div className={Style.collectionProfile_box}>
         <div className={Style.collectionProfile_box_left}>
           <Image
-            src={images.nft_image_1}
+            src={images.nft_image_1}  // Ensure the correct image path here
             alt="nft image"
             width={800}
             height={800}
@@ -26,16 +26,16 @@ const collectionProfile = () => {
           />
 
           <div className={Style.collectionProfile_box_left_social}>
-            <a href="#">
+            <a href="https://www.facebook.com/rohithoffical" target="_blank" rel="noopener noreferrer">
               <TiSocialFacebook />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/rohith_official/" target="_blank" rel="noopener noreferrer">
               <TiSocialInstagram />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/rohithoffical" target="_blank" rel="noopener noreferrer">
               <TiSocialLinkedin />
             </a>
-            <a href="#">
+            <a href="https://x.com/rohithsoffical" target="_blank" rel="noopener noreferrer">
               <TiSocialTwitter />
             </a>
           </div>
@@ -44,9 +44,8 @@ const collectionProfile = () => {
         <div className={Style.collectionProfile_box_middle}>
           <h1>Awesome NFTs Collection</h1>
           <p>
-            Karafuru is home to 5,555 generative arts where colors reign
-            supreme. Leave the drab reality and enter the world of Karafuru by
-            Museum of Toys.
+          NFTVerse is a collection of 5,555 unique artworks where colors come to life. 
+          Step into the world of NFTVerse by Museum of Toys and experience something extraordinary.
           </p>
 
           <div className={Style.collectionProfile_box_middle_box}>

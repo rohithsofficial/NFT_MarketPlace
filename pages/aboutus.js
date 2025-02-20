@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
+
 //INTERNAL IMPORT
 import Style from "../styles/aboutus.module.css";
 import { Brand } from "../components/componentsindex";
 import images from "../img";
+import withAuthProtection from "../utils/withAuth";
 
 const aboutus = () => {
   const founderArray = [
@@ -31,18 +33,18 @@ const aboutus = () => {
   ];
 
   const factsArray = [
-    {
-      title: "10 million",
-      info: "Articles have been public around the world (as of Sept. 30, 2024)",
-    },
-    {
-      title: "100,000",
-      info: "Registered users account (as of Sept. 30, 2024)",
-    },
-    {
-      title: "220+",
-      info: "Countries and regions have our presence (as of Sept. 30, 2024",
-    },
+    // {
+    //   title: "10 million",
+    //   info: "Articles have been public around the world (as of Sept. 30, 2024)",
+    // },
+    // {
+    //   title: "100,000",
+    //   info: "Registered users account (as of Sept. 30, 2024)",
+    // },
+    // {
+    //   title: "220+",
+    //   info: "Countries and regions have our presence (as of Sept. 30, 2024",
+    // },
   ];
   return (
     <div className={Style.aboutus}>
@@ -51,9 +53,7 @@ const aboutus = () => {
           <div className={Style.aboutus_box_hero_left}>
             <h1>👋 About Us.</h1>
             <p>
-              We’re impartial and independent, and every day we create
-              distinctive, world-class programmes and content which inform,
-              educate and entertain millions of people in the around the world.
+            We are a decentralized and innovative NFT marketplace committed to empowering creators and collectors worldwide. Our platform ensures transparency, security, and true digital ownership, enabling seamless transactions and an immersive experience in the world of blockchain-powered assets.
             </p>
           </div>
           <div className={Style.aboutus_box_hero_right}>
@@ -87,15 +87,15 @@ const aboutus = () => {
           </div>
         </div>
 
-        <div className={Style.aboutus_box_title}>
+        {/* <div className={Style.aboutus_box_title}>
           <h2>🚀 Fast Facts</h2>
           <p>
             We’re impartial and independent, and every day we create
             distinctive, world-class programmes and content
           </p>
-        </div>
+        </div> */}
 
-        <div className={Style.aboutus_box_facts}>
+        {/* <div className={Style.aboutus_box_facts}>
           <div className={Style.aboutus_box_facts_box}>
             {factsArray.map((el, i) => (
               <div className={Style.aboutus_box_facts_box_info}>
@@ -104,11 +104,11 @@ const aboutus = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
       <Brand />
     </div>
   );
 };
 
-export default aboutus;
+export default withAuthProtection(aboutus);

@@ -1,6 +1,6 @@
 import React from "react";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import Style from "./Button.module.css";
 
 const Button = ({ btnName, handleClick, icon, classStyle }) => {
@@ -8,7 +8,7 @@ const Button = ({ btnName, handleClick, icon, classStyle }) => {
     <div className={Style.box}>
       <button
         className={`${Style.button} ${classStyle}`}
-        onClick={() => handleClick()}
+        onClick={handleClick} // Directly calling handleClick
       >
         {icon} {btnName}
       </button>

@@ -2,6 +2,8 @@ import React, { useEffect, useState, useContext } from "react";
 import { useRouter } from "next/router";
 
 //INTERNAL IMPORT
+
+import withAuthProtection from "../utils/withAuth";
 import { Button, Category, Brand } from "../components/componentsindex";
 import NFTDetailsPage from "../NFTDetailsPage/NFTDetailsPage";
 
@@ -34,4 +36,5 @@ const NFTDetails = () => {
   );
 };
 
-export default NFTDetails;
+
+export default withAuthProtection(NFTDetails);

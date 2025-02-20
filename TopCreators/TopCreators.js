@@ -1,4 +1,9 @@
 export const getTopCreators = (creators) => {
+  if (!Array.isArray(creators) || creators.length === 0) {
+    console.error("Error: creators is not a valid array", creators);
+    return [];
+  }
+
   const finalCreators = [];
 
   const finalResults = creators.reduce((index, currentValue) => {

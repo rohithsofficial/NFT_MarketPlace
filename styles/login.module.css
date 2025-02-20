@@ -1,35 +1,120 @@
 
-.login{
+.user_box_social_item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    border: 2px solid var(--shadow-dar-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.active{
+    box-shadow: var(--box-shadow);
+}
+
+.user_box_social_item:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.user_box_or{
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+}
+.user_box_or::before{
+    content: "";
+    width: 45%;
+    border: 1px solid var(--shadow-dark-color);
+    left: 0;
+    top: .8rem;
+    position: absolute;
+}
+.user_box_or::after{
+    content: "";
+    width: 45%;
+    border: 1px solid var(--shadow-dark-color);
+    right: 0;
+    top: .8rem;
+    position: absolute;
+}
+
+.user_box_input{
+    margin-top: 3rem;
+}
+
+.user_box_input_box{
+    display: grid;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.user_box_input_box_label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+}
+
+.user_box_input_box input{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: .5rem;
+    outline: 0;
+border: 1px solid var(--shadow-dark-color);
+    background-color: transparent;
+}
+
+
+.button{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.Login{
     width: 100%;
     margin-block: 5rem;
 }
 
-.login_box{
+.Login_box{
     width: 30%;
     margin: 0 auto;
 }
 
-.login_box h1{
+.Login_box h1{
     text-align: center;
     font-size: 3rem;
     margin-bottom: 5rem;
 }
 
-.login_box_para{
+.Login_box_para{
     text-align: center;
     line-height: 0;
     margin-top: 3rem;
     font-weight: 700;
 }
 
-.login_box_para a{
+.Login_box_para a{
     font-weight: 500;
     margin-left: 1rem;
 }
 
 
 @media screen and (max-width: 35em) {
-    .login_box{
+
+    .user_box_social_item{
+        font-size: 1rem;
+    }
+
+    .Login_box{
         width: 90%;
     }
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-
-//INTERNAL IMPORT
+// INTERNAL IMPORT
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/index.module.css";
 import {
   HeroSection,
@@ -21,71 +21,77 @@ import {
 } from "../components/componentsindex";
 import { getTopCreators } from "../TopCreators/TopCreators";
 
-//IMPORTING CONTRCT DATA
+// IMPORTING CONTRACT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {
-  const { checkIfWalletConnected, currentAccount } = useContext(
+  const { checkIfWalletConnected, currentAccount, fetchNFTs } = useContext(
     NFTMarketplaceContext
   );
+
   useEffect(() => {
     checkIfWalletConnected();
   }, []);
 
-  const { fetchNFTs } = useContext(NFTMarketplaceContext);
   const [nfts, setNfts] = useState([]);
   const [nftsCopy, setNftsCopy] = useState([]);
 
   useEffect(() => {
     if (currentAccount) {
-      fetchNFTs().then((items) => {
-        console.log(nfts);
-        setNfts(items?.reverse());
-        setNftsCopy(items);
-      });
+      fetchNFTs()
+        .then((items) => {
+          console.log("Fetched NFTs:", items); // Debugging log
+          if (Array.isArray(items)) {
+            setNfts(items.reverse());
+            setNftsCopy(items);
+          } else {
+            setNfts([]); // Prevents undefined state
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching NFTs:", error);
+          setNfts([]); // Ensures fallback state
+        });
     }
   }, [currentAccount]);
 
-  //CREATOR LIST
-
-  const creators = getTopCreators(nfts);
-  // console.log(creators);
+  // CREATOR LIST
+  const creators = getTopCreators(nfts || []);
 
   return (
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
-      <BigNFTSilder />
-      <Title
-        heading="Audio Collection"
-        paragraph="Discover the most outstanding NFTs in all topics of life."
-      />
-      <AudioLive />
-      {creators.length == 0 ? (
-        <Loader />
-      ) : (
-        <FollowerTab TopCreator={creators} />
-      )}
-
-      <Slider />
-      <Collection />
       <Title
         heading="Featured NFTs"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
-      <Filter />
-      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
-
-      <Title
+      <br></br>
+      {/* <Filter /> */}
+      {Array.isArray(nfts) && nfts.length === 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
+      <BigNFTSilder />
+      {/* <Title
+        heading="Audio Collection"
+        paragraph="Discover the most outstanding NFTs in all topics of life."
+      />
+      <AudioLive /> */}
+      {Array.isArray(creators) && creators.length === 0 ? (
+        <Loader />
+      ) : (
+        <FollowerTab TopCreator={creators} />
+      )}
+      {/* <Slider /> */}
+      {/* <Collection /> */}
+      {/* <Title
         heading="Browse by category"
         paragraph="Explore the NFTs in the most featured categories."
       />
-      <Category />
+      <Category /> */}
       <Subscribe />
-      <Brand />
-      <Video />
+      {/* <Brand /> */}
+      {/* <Video /> */}
     </div>
   );
 };
 
-export default Home;
+export default withAuthProtection(Home);

@@ -6,7 +6,7 @@ import nftMarketplace from "./NFTMarketplace.json";
 //   "0x620C57A2C821b4680090393891cA49Bd715c4813";
 // --------LOCALHOST 
 export const NFTMarketplaceAddress =  
-      "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+      "0x59349c0A5d6397744C31dD40FBE851B203a9C5C6";
 export const NFTMarketplaceABI = nftMarketplace.abi;
 
 //NETWORK
@@ -78,14 +78,14 @@ const networks = {
     blockExplorerUrls: ["https://bscscan.com"],
   },
   localhost: {
-    chainId: `0x${Number(31337).toString(16)}`,
-    chainName: "localhost",
+    chainId: `0x${Number(1337).toString(16)}`,
+    chainName: "localganche",
     nativeCurrency: {
-      name: "GO",
-      symbol: "GO",
+      name: "ETH",
+      symbol: "ETH",
       decimals: 18,
     },
-    rpcUrls: ["http://127.0.0.1:8545/"],
+    rpcUrls: ["http://127.0.0.1:7545/"],
     blockExplorerUrls: ["https://bscscan.com"],
   },
 };

@@ -1,6 +1,7 @@
 import React from "react";
+//INTERNAL 
 
-//INTERNAL IMPORT
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/collection.module.css";
 import images from "../img";
 import {
@@ -44,11 +45,10 @@ const collection = () => {
       <CollectionProfile />
       <Filter />
       <NFTCardTwo NFTData={collectionArray} />
-
-      <Slider />
+      {/* <Slider /> */}
       <Brand />
     </div>
   );
 };
 
-export default collection;
+export default withAuthProtection(collection);

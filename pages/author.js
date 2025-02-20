@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 
 //INTERNAL IMPORT
+
+import withAuthProtection from "../utils/withAuth";
 import Style from "../styles/author.module.css";
 import { Banner, NFTCardTwo } from "../collectionPage/collectionIndex";
 import { Brand, Title } from "../components/componentsindex";
@@ -116,4 +118,4 @@ const author = () => {
   );
 };
 
-export default author;
+export default withAuthProtection(author);

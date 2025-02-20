@@ -1,18 +1,16 @@
 const hre = require("hardhat");
 
 async function main() {
-  const NFTMarketplace = await hre.ethers.getContractFactory("NFTMarketplace");
-  const nftMarketplace = await NFTMarketplace.deploy();
-
-  await nftMarketplace.deployed();
-
-  console.log(` deployed contract Address ${nftMarketplace.address}`);
+  const NFTMarketplaceFactory = await hre.ethers.getContractFactory("NFTMarketplace");
+  const NFTMarketplace = await NFTMarketplaceFactory.deploy();
+  
+  await NFTMarketplace.deployed();
+  console.log(`Deployed to ${NFTMarketplace.address}`);
 }
 
+// We recommend this pattern to be able to use async/await everywhere
+// and properly handle errors.
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
-
-//npx hardhat run scripts/deploy.js --network polygon_amoy
-//npx hardhat run scripts/deploy.js --network localhost

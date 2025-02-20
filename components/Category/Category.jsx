@@ -10,7 +10,7 @@ const Category = () => {
   const CategoryArray = [
     {
       images: images.creatorbackground1,
-      name: "Dance Monkey",
+      name: "Monkey",
     },
     {
       images: images.creatorbackground2,
@@ -18,7 +18,7 @@ const Category = () => {
     },
     {
       images: images.creatorbackground3,
-      name: "Entirtment Art",
+      name: "Entierment",
     },
     {
       images: images.creatorbackground4,
