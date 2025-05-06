@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://nft99.vercel.app</loc><lastmod>2025-05-06T06:02:24.404Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/NFT-details</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/aboutus</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/account</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/author</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/collection</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/connectWallet</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/contactus</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/login</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/logout</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/reSellToken</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/searchPage</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/signUp</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/subscription</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nft99.vercel.app/uploadNFT</loc><lastmod>2025-05-06T06:02:24.405Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
